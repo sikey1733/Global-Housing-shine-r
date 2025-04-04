@@ -37,7 +37,7 @@ shiny::runApp("shinyR.F")
 
 **Лучшие параметры Random Forest:**
 
-mtry = 6
+mtry = 16
 ntree = 500
 Accuracy на тестовых данных: 0.82
 
