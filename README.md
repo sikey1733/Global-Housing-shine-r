@@ -1,8 +1,56 @@
+# Прогнозирование оттока клиентов телеком-компании
 
-# Telco_Cutomer_Churn
+## Описание проекта
 
-<!-- badges: start -->
-<!-- badges: end -->
+Проект разработан для прогнозирования вероятности оттока клиентов телекоммуникационной компании. Включает:
+- ML-модель Random Forest с балансировкой классов
+- Интерактивное Shiny-приложение для визуализации прогнозов
+- Полный цикл обработки данных от очистки до валидации модели
 
-The goal of Telco_Cutomer_Churn is to ...
+### Ключевые особенности
+- **Алгоритм**: Random Forest с оптимизацией гиперпараметров
+- **Балансировка данных**: SMOTE (Synthetic Minority Over-sampling Technique)
+- **Метрики качества**:
+  - ROC-AUC: 0.89
+  - Accuracy: 0.82
+  - Precision: 0.78
+  - Recall: 0.85
+
+
+## Структура проекта
+
+Telco_Customer_Churn/
+├── shinyR.F/ 
+│ ├── app.R 
+│ └── screenshot.png 
+├── Telco-Customer-Churn.csv 
+├── Telco_Churn_Analysis.R 
+├── README.md 
+└── LICENSE 
+
+### Запуск Shiny-приложения:
+
+**Локально (из RStudio):**
+shiny::runApp("shinyR.F")
+
+### Результаты модели 
+
+**Лучшие параметры Random Forest:**
+
+mtry = 6
+ntree = 500
+Accuracy на тестовых данных: 0.82
+
+**Топ-5 важных признаков:**
+
+- Contract (Тип договора)
+- TotalCharges (Общие платежи)
+- tenure (Срок обслуживания)
+- MonthlyCharges (Ежемесячные платежи)
+- InternetService (Тип интернета)
+
+
+### Лицензия
+
+- Проект распространяется под лицензией MIT
 
