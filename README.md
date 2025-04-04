@@ -16,18 +16,6 @@
   - Precision: 0.78
   - Recall: 0.85
 
-
-## Структура проекта
-
-Telco_Customer_Churn/
-├── shinyR.F/ 
-│ ├── app.R 
-│ └── screenshot.png 
-├── Telco-Customer-Churn.csv 
-├── Telco_Churn_Analysis.R 
-├── README.md 
-└── LICENSE 
-
 ### Запуск Shiny-приложения:
 
 **Локально (из RStudio):**
